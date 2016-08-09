@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [0807/013854:ERROR:process_info.cc(608)] range at 0xfeef8000, size 0x230 fully unreadable
 [0807/013854:ERROR:process_info.cc(608)] range at 0xfe8ea000, size 0x230 fully unreadable
 [0807/013854:ERROR:process_info.cc(608)] range at 0xfeeff000, size 0xf84 fully unreadable
@@ -25,3 +26,9 @@
 [0807/013854:ERROR:process_info.cc(608)] range at 0xfe7aa000, size 0xf84 fully unreadable
 [0807/013854:ERROR:process_info.cc(608)] range at 0xfe7a7000, size 0xf84 fully unreadable
 [0807/013854:ERROR:process_info.cc(608)] range at 0xfe7ad000, size 0xf84 fully unreadable
+=======
+[0809/040909:ERROR:process_info.cc(608)] range at 0xfed7e000, size 0x230 fully unreadable
+[0809/040909:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[0809/040909:ERROR:exception_snapshot_win.cc(88)] thread ID 3980 not found in process
+[0809/040909:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::InitializeException failed
+>>>>>>> 06e858417fbd67c6b679b2ace3ce6967a91e7ea2
