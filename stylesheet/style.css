@@ -88,6 +88,9 @@
     text-align: left;background-color:#f4511e;
     border-color: black;
   }
+.parampa {
+  text-align: right;background-color: blue;
+}
 div.picture {
     border: 0px solid #ccc;
     float: left;
