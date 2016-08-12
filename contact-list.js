@@ -15,7 +15,7 @@ var udin = {
 var kontak = [marley, udin];
 //fungsi log kontak//
 function printPerson(person) {
-    console.log(person.nama + " " + person.email + “ “+ person.telepon);
+    console.log(person.nama + " " + person.email + " "+ person.telepon+ " ");
 }
 //fungsi_list//
 function listKontak() {
