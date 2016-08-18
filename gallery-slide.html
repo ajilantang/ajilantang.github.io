@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+</head>
+<body>
+  <h2 class="para">My Photo album</h2>
+  <div style="max-width:800px;position:relative">
+    <img class="mySlides" src="img/aji.jpg" style="width:100%;position:center">
+    <img class="mySlides" src="img/beegees.jpg" style="width:100%;position:center">
+    <img class="mySlides" src="img/queen.jpg" style="width:100%;position:center">
+    <a class="button-nav" style="position:absolute;top:50%;left:0" onclick="plusDivs(-1)">Previous</a>
+    <a class="button-nav" style="position:absolute;top:50%;right:0" onclick="plusDivs(1)">Next</a>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+  </script>
+
+</body>
+</html>

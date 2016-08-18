@@ -10,7 +10,9 @@
     border: 5px;
     cursor: pointer;
 }
-
+.button-nav{
+  background-color: white;
+}
 .dropdown {
     position: relative;
     display: inline-block;
