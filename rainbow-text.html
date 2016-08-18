@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rainbow text</title>
+  </head>
+  <body>
+    <p><span id="klik-0">klik</span><span id="klikini">untuk</span> <span id="klikaja">merubah</span> <span id="klikitu">tulisan</span></p>
+    <button id="button" type="klik" name="button">klik</button>
+    <script type="text/javascript">
+      document.getElementById('button').onclick = ubahWarna;
+      function ubahWarna() {
+        document.getElementById('klikini').style.color="blue";
+        document.getElementById('klikitu').style.color="red";
+        document.getElementById('klik-0').style.color="pink";
+        document.getElementById('klikaja').style.color="purple";
+      };
+    </script>
+  </body>
+</html>
