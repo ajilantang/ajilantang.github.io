@@ -1,11 +1,14 @@
 (function () {
 
     var guessesLeft, randomNumber, guessInput, submitButton, answerDisplay, maxGuesses;
+
     maxGuesses = 5;
     guessInput = document.getElementById("guess");
     submitButton = document.getElementById("submitAnswer");
     answerDisplay = document.getElementById("answer");
-    answerDisplay.innerHTML = "Please make a guess!";
+
+    answerDisplay.innerHTML = "Silahkan menebak!";
+
     submitButton.addEventListener("click", function (event) {
         event.stopPropagation();
         event.preventDefault();
@@ -23,22 +26,22 @@
     function checkAnswer () {
 
         if (guessInput.value == randomNumber) {
-            answerDisplay.innerHTML = "You win! " + randomNumber + " is correct. " +
-                "Please input your next guess to start again.";
+            answerDisplay.innerHTML = "Anda menang! " + randomNumber + " angka yang tepat " +", "+
+                "silahkan coba lagi keberuntungan anda";
             initGame();
             return;
         }
         else if (guessInput.value > randomNumber) {
-            answerDisplay.innerHTML = "Too high!";
+            answerDisplay.innerHTML = "Too high!bro,coba lagi";
         }
         else {
-            answerDisplay.innerHTML = "Too low!";
+            answerDisplay.innerHTML = "Too low!coba lagi";
         }
 
         guessesLeft -= 1;
 
         if (guessesLeft === 0) {
-            answerDisplay.innerHTML += " No guesses left - you lost!";
+            answerDisplay.innerHTML = " kesempatan anda habis!silahkan coba lagi";
             initGame();
         }
     }
