@@ -26,16 +26,16 @@
     function checkAnswer () {
 
         if (guessInput.value == randomNumber) {
-            answerDisplay.innerHTML = "Anda menang! " + randomNumber + " angka yang tepat " +", "+
+            answerDisplay.innerHTML = "Anda menang!, " + randomNumber + " angka yang tepat " +", "+
                 "silahkan coba lagi keberuntungan anda";
             initGame();
             return;
         }
         else if (guessInput.value > randomNumber) {
-            answerDisplay.innerHTML = "Too high!bro,coba lagi";
+            answerDisplay.innerHTML = "Tebakan anda diatas nilai,coba lagi";
         }
         else {
-            answerDisplay.innerHTML = "Too low!coba lagi";
+            answerDisplay.innerHTML = "Tebakan anda dibawah nilai!coba lagi";
         }
 
         guessesLeft -= 1;
