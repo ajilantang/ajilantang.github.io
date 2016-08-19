@@ -3,71 +3,113 @@
 <head>
   <title>AJI LANTANG MARDIKA</title>
   <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+  <script>
+      var anim_i = 0;
+      var anim_array = ["Hello, World!","Selamat Datang","ajilantang.github.io","Mari Berkreasi"];
+      var anim_elem;
+      function animNext(){
+      	anim_i++;
+      	anim_elem.style.opacity = 0;
+      	if(anim_i > (anim_array.length - 1)){
+      		anim_i = 0;
+      	}
+      	setTimeout('animSlide()',1000);
+      }
+      function animSlide(){
+      	anim_elem.innerHTML = anim_array[anim_i];
+      	anim_elem.style.opacity = 1;
+      	setTimeout('animNext()',2000);
+      }
+  </script>
 </head>
-  <body>
+<body>
   <div class = "jumbotron text-center">
-    <h1 >Selamat datang!!</h1><br>
+    <h1><span id="anim"></span></h1>
+    <script>anim_elem = document.getElementById("anim"); animSlide(); </script>
     <img src="img/aji.jpg" width="10%" >
-    <p>Mari Belajar HTML & CSS</p>
     <form class= "form-inline">
       <input type="email" class="form-control" size= "50" placeholder="Email address">
-      <button type="button" class="btn btn-danger">Subcribe</button>
+      <button type="button" onclick="subcribeThanks(this)">Subcribe</button>
+      <script>
+        function subcribeThanks(id) {
+            id.innerHTML = "Thanks";
+        }
+      </script>
     </form><br>
-<nav class="para">
- <div class="dropdown">
-    <button class="dropbtn"><a href="index.html">Home</a></button>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">Tugas minggu 1</button>
-    <div class="dropdown-content">
-      <a href="news.html"> News</a>
-      <a href="story.html"> Story </a>
-      <a href="blog-post.html"> blogpost</a>
-      <a href="web-evaluation.html"> Web evaluation </a>
-      <a href="web-design.html">Web design</a>
-      <a href="web-deb.html">web developement</a>
-      <a href="reflection.html">reflection</a>
-      <a href="wireframe.html"> Wireframe </a>
-      <a href="core-value.html">core</a>
+    <nav class="para">
+      <div class="dropdown">
+        <button class="dropbtn"><a href="index.html">Home</a></button>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Tugas minggu 1</button>
+        <div class="dropdown-content">
+          <a href="news.html"> News</a>
+          <a href="story.html"> Story </a>
+          <a href="blog-post.html"> blogpost</a>
+          <a href="web-evaluation.html"> Web evaluation </a>
+          <a href="web-design.html">Web design</a>
+          <a href="web-deb.html">web developement</a>
+          <a href="reflection.html">reflection</a>
+          <a href="wireframe.html"> Wireframe </a>
+          <a href="core-value.html">core</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Tugas minggu 2</button>
+        <div class="dropdown-content">
+          <a href="learning.html"> learning</a>
+          <a href="blog-js.html"> blog-js </a>
+          <a href="math-basic.js"> math-basic</a>
+          <a href="mygame.js"> my games </a>
+          <a href="contact-list.js">contact-list</a>
+          <a href="reflection2.js">reflection2</a>
+          <a href="">reflection</a>
+          <a href="wireframe/wireframe.html"> Wireframe </a>
+        </div>
+      </div>
+    </nav>
+    <div class="parampa">
+      <a href="https://ajilantang.wordpress.com/about/">blog</a>
     </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">Tugas minggu 2</button>
-    <div class="dropdown-content">
-      <a href="learning.html"> learning</a>
-      <a href="blog-js.html"> blog-js </a>
-      <a href="math-basic.js"> math-basic</a>
-      <a href="mygame.js"> my games </a>
-      <a href="contact-list.js">contact-list</a>
-      <a href="reflection2.js">reflection2</a>
-      <a href="">reflection</a>
-      <a href="wireframe/wireframe.html"> Wireframe </a>
-    </div>
-  </div>
-</nav>
-  <div class="parampa">
-    <a href="https://ajilantang.wordpress.com/about/">blog</a>
-  </div>
-</div> <br>
+  </div> <br>
   <h2 class="text-center" > Hello World! </h2><br>
-  <p class="para"> Nama saya Aji Lantang Mardika </p>
-  <p class="para"> Saat ini saya sedang belajar membuat Web personal tentang tugas-tgas yang diberikan hacktiv8.</p>
-  <p class="para"> Web personal yang saya buat kali ini merupakan rekam jejak pembelajaran saya di Hacktiv8, sehingga jelas masih banyak kekurangan baik secara visual maupun pesan yang ingin disampaikan. Semoga rekam jejak saya dari web ini bisa menjadi evaluasi di kemudian untuk pelatihan pembuatan web saya selanjutnya. Adapula rekam jejak tugas saya bisa dilihat di header <strong>Tugas minggu 1 dan 2</strong></p><br>
-<iframe src="http://www.hacktiv8.com/" height="300px" width="100%"></iframe>
-<p><a href="http://www.hacktiv8.com/">Hacktiv8</a></p><br>
-<p>Silahkan input form di bawah, terimakasih</p>
-<form>
-  First name:<br>
-  <input type="text" name="firstname">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname">
-</form><br>
-<form>
-  <input type="radio" name="gender" value="male" checked> Male<br>
-  <input type="radio" name="gender" value="female"> Female<br>
-  <input type="radio" name="gender" value="other"> Other
-</form>
+  <p class="para">Terima kasih telah mengunjungi Website saya </p>
+  <p class="para"> Web Personal ini bertujuan untuk berbagi berbagai info tentang developer mulai dari kebutuhan industri maupun personal </p>
+  <p class="para">Beberapa hal yang saya dapat dari <a href="www.youtube.com">Youtube</a> dan cukup menarik untuk dipelajari adalah sebagai berikut :</p><br>
+  <div class="para">
+    <iframe width="40%" height="315px" src="https://www.youtube.com/embed/VtEYwdOSTpY" frameborder="0" allowfullscreen></iframe>
+    <iframe width="40%" height="315px" src="https://www.youtube.com/embed/An7HC1LolDM" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="para">
+    <iframe width="40%" height="315px" src="https://www.youtube.com/embed/Q5763pPchvw" frameborder="0" allowfullscreen></iframe>
+    <iframe width="40%" height="315px" src="https://www.youtube.com/embed/SS-9y0H3Si8" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="para">
+    <p>Silahkan input form di bawah, terimakasih</p>
+    <form >
+      First name:<br>
+      <input type="text" name="firstname"><br>
+      Last name:<br>
+      <input type="text" name="lastname">
+    </form><br>
+    <form >
+      <input type="radio" name="gender" value="male" checked>Male<br>
+      <input type="radio" name="gender" value="female">Female<br>
+      <input type="radio" name="gender" value="other">Other
+    </form><br>
+    <button type="button" onclick="submitThanks(this)">Submit</button>
+    <script>
+      function submitThanks(id) {
+          id.innerHTML = "Thanks";
+      }
+    </script>
+  </div><br>
 </body>
-  <footer>Contact me : idLine:ajilantang <br><a href="https://www.facebook.com/ajilantang.mardika">facebook</a></footer>
+<footer class="para">
+  <div>
+    <a href="https://www.facebook.com/ajilantang.mardika"><img src="img/facebook-logo.jpg" alt="facebook-logo.jpg" width="5%" height="5%"/></a>
+    <span> </span>
+    <a href="https://github.com/ajilantang/ajilantang.github.io"><img src="img/github-logo.jpg" alt="github-logo.jpg" width="5%" height = "5%"/></a>
+  </div>
+</footer>
 </html>
