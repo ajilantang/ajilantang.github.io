@@ -1,6 +1,6 @@
 function formatHuruf(kata){
   var tempt = []
-  var x =""
+  var x =""//bucket
   var gede = kata.toUpperCase()
   var kecil = kata.toLowerCase()
   for (var i = 0; i < kata.length; i++) {
@@ -12,13 +12,13 @@ function formatHuruf(kata){
       // console.log(tempt[i]);-->cekArray
     }
   }
-  var z = tempt.toString()
-  for (var j = 0; j < z.length; j++) {//sorting index string
+  var z = tempt.toString()//sorting index string
+  for (var j = 0; j < z.length; j++) {
     if (j%2==0) {//eliminate (",")
     x+=z.charAt(j)//result
     }
   }
-  console.log(x);
-  // console.log(tempt);
+  console.log(x);//output
+  // console.log(tempt);-->cek array
 }
 formatHuruf("JaskDjKDnK")
