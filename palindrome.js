@@ -1,10 +1,8 @@
 function palindrome(string){
-  var indexString=string.length
-  for (var i = 0; i <indexString; i++) {
-    if (string[i]==string[(indexString-1)-i]) {
-      return true
-    }
+  if (string.split('').toString()===string.split('').reverse().toString()) {
+    return true
+  }else {
+    return false
   }
-return false
 }
-console.log(palindrome("salah"));
+console.log(palindrome("salas"));
